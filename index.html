@@ -1,10 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <configuration>
+     <system.webServer>
+        <httpProtocol>
+            <customHeaders>
+                <add name="X-Content-Type-Options" value="nosniff" />
+            </customHeaders>
+        </httpProtocol>
+    </system.webServer>
+  </configuration>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=egde">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>(*/ω＼*)</title>
+  <script> 
+    
+    document.addEventListener('visibilitychange', function () { 
+      // 用户息屏、或者切到后台运行 （离开页面） 
+      if (document.visibilityState === 'hidden') {
+        document.getElementByID("a").innerHTML="(*/ω＼*)";
+      } 
+      // 用户打开或回到页面 
+      if (document.visibilityState === 'visible') {
+        document.getElementByID("a").innerHTML="Ciallo～ (∠・ω< )⌒☆";
+      } 
+    })
+  </script>
+  <title id="a">Ciallo～ (∠・ω< )⌒☆</title>
 </head>
 <body>
   <h1>Hello My Friend!</h1>
