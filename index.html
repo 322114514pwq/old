@@ -18,11 +18,11 @@
     document.addEventListener('visibilitychange', function () { 
       // 用户息屏、或者切到后台运行 （离开页面） 
       if (document.visibilityState === 'hidden') {
-        document.getElementByID("a").innerHTML="(*/ω＼*)";
+        document.getElementById("a").innerHTML="(*/ω＼*)";
       } 
       // 用户打开或回到页面 
       if (document.visibilityState === 'visible') {
-        document.getElementByID("a").innerHTML="Ciallo～ (∠・ω< )⌒☆";
+        document.getElementById("a").innerHTML="Ciallo～ (∠・ω< )⌒☆";
       } 
     })
   </script>
