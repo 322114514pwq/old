@@ -31,7 +31,6 @@
     }
     .heimu{
       color: black;
-      margin: auto;
       background: black;
       width: fit-content;
       transition: color 0.5s;
@@ -46,7 +45,9 @@
   <h1 style="text-shadow:2px 2px 2px grey;">Hello My Friend!</h1>
   <a href="https://space.bilibili.com/702970767">my bili account</a>
   <br>
-  <img src="source/012.jpg" alt="flandre's smile" draggable="true">
-  <div class="heimu">看不见我</div>
+  <img src="source/012.jpg" alt="flandre's smile" draggable="true"><br>
+  <p><span class="heimu">看不见我</span>看得见我</p>
+  <br><br><canvas id="canvas1" title='单击以重置' style="border: 1px solid red;background-color: white;display: block;margin: auto;" onmouseover="flag=true" onmouseout="flag=false" onclick="ctx.fillRect(0,0,canvas.width,canvas.height);"></canvas>
+  <script src="source/js/js.js"></script>
 </body>
 </html>
